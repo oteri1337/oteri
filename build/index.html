@@ -16,12 +16,37 @@
 
     <style>
 
+    :root {
+        --bg-color: #f7f7f7;
+        
+        --bg-font-color: #000000;
 
+        --primary-bg-color: #ffffff;
+
+        --primary-bg-font-color: #000000;
+    }
 
     body {
-        background: #f7f7f7;
+        background: var(--bg-color);
+        color: var(--bg-font-color);
         font-family: 'Signika Negative', 'Trebuchet MS', sans-serif;
     }
+
+
+    .head,.mid,.tail {
+        padding: 1rem;
+        cursor: pointer;
+        margin-bottom: 1rem;
+        color: var(--primary-bg-font-color);
+        background: var(--primary-bg-color);
+    }
+
+
+
+
+
+
+
 
     .row {
         display: grid;
@@ -60,12 +85,7 @@
 
 
 
-    .head,.mid,.tail {
-        padding: 1rem;
-        cursor: pointer;
-        margin-bottom: 1rem;
-        background: white;
-    }
+
 
     .head {
         border-top-left-radius: 15px;
@@ -95,23 +115,6 @@
     }
 
 
-
-
-
-
-
-
-
-
-
-
-    /* .col.l12 {
-        grid-column: span 12;
-        margin-bottom: 5px;
-    } */
-
-
-
     .f1 {
         flex: 1;
         padding-left: 1rem;
@@ -137,11 +140,6 @@
         margin-right: 5px;
     }
 
-    /* img {
-        padding-top: 3px;
-        padding-right: 0.5rem;
-    } */
-
     p, h1, h2 {
         margin: 0;
     }
@@ -149,12 +147,6 @@
     h2 {
         margin-bottom: 10px;
     }
-
-    /* p {
-        padding-top: 8px;
-        padding-left: 10px;
-    } */
-
 
     a {
         text-decoration: none;
@@ -218,21 +210,15 @@
         .col.s12 {
             grid-column: span 12;
         }
-/* 
-        .col.l12 {
-            grid-column: unset;
-        } */
 
         .mobile-center {
             text-align: center;
         }
 
-
         h2 {
             margin-top: 2rem;
             text-transform: uppercase;
         }
-
 
     } 
 
@@ -242,35 +228,27 @@
 <body>
 
 
-    <!-- <div class="row">
-        <div class="col l4" style="background: red;">1</div>
-        <div style="background: yellow;">2</div>
+    <div class="row">
+        <div class="col l11 s11">
+            <h1>Oteri Avwunudiogba</h1>
+        </div>
+        <div class="col l1 s1">
+            <br/>
+            <img id="sun" src="flaticons/png/028-sun-3.png" style="float: right;" />
+            <img id="moon" src="flaticons/png/032-moon-2.png" style="float: right;" />
 
-        <div style="background: red;">3</div>
-        <div style="background: yellow;">4</div>
+        </div>
+    </div>
 
-        <div style="background: red;">5</div>
-        <div style="background: yellow;">6</div>
 
-        <div style="background: red;">7</div>
-        <div style="background: yellow;">8</div>
-
-        <div style="background: red;">9</div>
-        <div style="background: yellow;">10</div>
-
-        <div style="background: red;">11</div>
-        <div style="background: yellow;">12</div>
-    </div> -->
-
-    <h1>Oteri Avwunudiogba</h1>
   
         <div class="mb">
-            <img src="flaticons/png/030-degree.png" />
+            <img src="flaticons/png/021-degree.png" />
             <span class="sub">Studied Physics</span>    
         </div>
 
         <div>
-            <img src="flaticons/png/031-coding-1.png" />
+            <img src="flaticons/png/022-coding.png" />
             <span class="sub">Programming Since 2016</span>    
         </div>
 
@@ -291,7 +269,7 @@
             </a>
         
             <a href="mailto:oteri1337@gmail.com" target="_blank">
-                <img src="flaticons/png/002-gmail.png" />
+                <img src="flaticons/png/010-gmail-2.png" />
             </a>
 
             <!-- <img src="flaticons/png/016-whatsapp-2.png" /> -->
@@ -312,30 +290,9 @@
     <div class="row gap">
 
 
-        <!-- <div class="f1">
-
-            <h2>Contact</h2>
-
-                <p><a href="mailto:oteri1337@gmail.com" target="_blank">Email</a></p>
-                <br/>
-
-
-                <p><a href="https://github.com/oteri1337" target="_blank">GitHub</a></p>
-                <br/>
-
-                <p><a href="https://linkedin.com/in/oteri1337" target="_blank">LinkedIn</a></p>
-                <br/>
-
-                <p><a href="https://leetcode.com/oteri1337/" target="_blank">LeetCode</a></p>
-                <br/>
-            
-
-    
-        </div> -->
-
 
         <div class="col l6 s12">
-            <h2 class="mobile-center">Experience</h2>
+            <h2 class="mobile-center">Work Experience</h2>
 
 
             <section>
@@ -344,7 +301,7 @@
 
 
                         <div class="col s1 l1 head">
-                            <img src="flaticons/png/017-html-5.png" />
+                            <img src="flaticons/png/014-html-5.png" />
                         </div>
 
                         <div class="col s5 l5 tail">
@@ -355,7 +312,7 @@
 
 
                         <div class="col s1 l1 head">
-                            <img src="flaticons/png/021-php-programming-language.png" />
+                            <img src="flaticons/png/018-php-programming-language.png" />
                         </div>
 
                         <div class="col s5 l5 tail">
@@ -365,7 +322,7 @@
 
 
                         <div class="col s1 l1 head">
-                            <img src="flaticons/png/018-css-3.png" />
+                            <img src="flaticons/png/015-css-3.png" />
                         </div>
 
                         <div class="col s5 l5 tail">
@@ -385,10 +342,14 @@
                         </div>
 
 
-                        <div class="col s1 l1 head">
-                            <img src="flaticons/png/020-java-script-1.png" />
-                        </div>
 
+
+
+
+
+                        <div class="col s1 l1 head">
+                            <img src="flaticons/png/017-java-script-1.png" />
+                        </div>
                         <div class="col s5 l5 tail">
                             <p>JavaScript</p>
                             6 years
@@ -402,23 +363,31 @@
 
 
                         <div class="col s1 l1 head">
-                            <img src="flaticons/png/021-php-programming-language.png" />
+                            <img src="flaticons/png/018-php-programming-language.png" />
                         </div>
                         <div class="col s5 l5 tail">
                             <p>Slim</p>
                             4 years
                         </div>
 
+
+
+
+
+
                         <div class="col s1 l1 head">
-                            <img src="flaticons/png/008-structure.png" />
+                            <img src="flaticons/png/007-structure.png" />
                         </div>
                         <div class="col s5 l5 tail">
                             <p>React JS</p>
                             4 years
                         </div>
 
+
+
+
                         <div class="col s1 l1 head">
-                            <img src="flaticons/png/009-sql-server.png" />
+                            <img src="flaticons/png/008-sql-server.png" />
                         </div>
                         <div class="col s5 l5 tail">
                             <p>SQL</p>
@@ -426,13 +395,17 @@
                         </div>
 
 
+
+
                         <div class="col s1 l1 head">
-                            <img src="flaticons/png/007-physics.png" />
+                            <img src="flaticons/png/006-physics.png" />
                         </div>
                         <div class="col s5 l5 tail">
                             <p>React Native</p>
                             2 years
                         </div>
+
+
 
 
                         <div class="col s1 l1 head">
@@ -459,7 +432,7 @@
 
 
                         <div class="col s1 l1 head">
-                            <img src="flaticons/png/024-git-2.png" />
+                            <img src="flaticons/png/019-git.png" />
                         </div>
                         <div class="col s5 l5 tail">
                             <p>Git</p>
@@ -478,24 +451,9 @@
         <div class="col l6 s12">
             <h2 class="mobile-center">Work History</h2>
 
-            <!-- <section class="row">
-                <div class="col l1 s1 head">
-                    logo
-                </div>
-                <div class="col l7 S7 mid">
-                    <p>EMPLOYER</p>
-                    <p>Duration</p>
-                </div>
-                <div class="col l4 S4 tail">
-                    <p>Type</p>
-                    <p>Tech Role</p>
-                </div>
-            </section> -->
-
-
             <section class="row">
                 <div class="col l1 s1 head">
-                    <img src="flaticons/png/027-letter-o-1.png">
+                    <img src="flaticons/png/020-letter-o.png">
                 </div>
                 <div class="col l7 S7 mid">
                     <p>SELF EMPLOYED</p>
@@ -678,16 +636,38 @@
 
     <br/>
     <br/>
+    <br/>
+    <br/>
+    <center>ICONS BY FLATICONS</center>
 
 
 
 
     <script>
-    if (location.protocol !== "https:" && location.host == "oteri.herokuapp.com") {
-        location.replace(
-            `https:${location.href.substring(location.protocol.length)}`
-        );
-    }
+
+        function changeTheme () {
+
+            const root = document.querySelector(":root");
+
+            root.style.setProperty("--bg-color", "black");
+
+            root.style.setProperty("--bg-font-color", "white");
+
+            root.style.setProperty("--primary-bg-color", "#1E222D");
+
+            root.style.setProperty("--primary-bg-font-color", "white");
+            
+        }
+
+        const moon = document.getElementById("moon");
+        moon.addEventListener("click", changeTheme);
+
+
+        if (location.protocol !== "https:" && location.host == "oteri.herokuapp.com") {
+            location.replace(
+                `https:${location.href.substring(location.protocol.length)}`
+            );
+        }
     </script>
 
 </body>
