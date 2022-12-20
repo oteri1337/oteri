@@ -15,18 +15,116 @@
 
 
     <style>
+
+
+
     body {
-        background: #F5F7FE;
+        background: #f7f7f7;
         font-family: 'Signika Negative', 'Trebuchet MS', sans-serif;
     }
 
-    .pbg {
+    .row {
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    .row.gap {
+        grid-gap: 2vw;
+    }
+
+    .col.l1 {
+        grid-column: span 1;
+    }
+
+    .col.l4 {
+        grid-column: span 4;
+    } 
+
+    .col.l5 {
+        grid-column: span 5;
+    }
+
+    .col.l6 {
+        grid-column: span 6;
+    }
+
+    .col.l7 {
+        grid-column: span 7;
+    }
+
+    .col.l11 {
+        grid-column: span 11;
+    }
+
+
+
+
+    .head,.mid,.tail {
         padding: 1rem;
-        border-radius: 5px;
         margin-bottom: 1rem;
         background: white;
-
     }
+
+    .head {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .tail {
+        padding-left: 0;
+        margin-right: 10px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .col.l12 {
+        grid-column: span 12;
+        margin-bottom: 5px;
+    } */
+
+
+
+    .f1 {
+        flex: 1;
+        padding-left: 1rem;
+    }
+
+    .f15 {
+        flex: 1.5;
+        flex-basis: 250px;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    } 
+
+
+
+    .pbg {
+        padding-top: 1rem;
+        padding-left: 0.5rem;
+        background: white;
+        padding-bottom: 1rem;
+    }
+
+    .mr5 {
+        margin-right: 5px;
+    }
+
+    /* img {
+        padding-top: 3px;
+        padding-right: 0.5rem;
+    } */
 
     p, h1, h2 {
         margin: 0;
@@ -36,10 +134,10 @@
         margin-bottom: 10px;
     }
 
-    p {
+    /* p {
         padding-top: 8px;
         padding-left: 10px;
-    }
+    } */
 
 
     a {
@@ -54,20 +152,7 @@
         margin-bottom: 1rem;
     }
 
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-    }
 
-    .f1 {
-        flex: 1;
-        padding-left: 1rem;
-    }
-
-    .f15 {
-        flex: 1.5;
-        flex-basis: 250px;
-    } 
 
     .pl1 {
         padding-left: 1rem;
@@ -77,11 +162,55 @@
         margin-bottom: 0;
     }
 
-    img {
-        padding-right: 1rem;
-    }
+
 
     @media (max-width: 500px) {
+
+
+        .col.s1 {
+            grid-column: span 1;
+        }
+
+        .col.s2 {
+            grid-column: span 2;
+        }
+
+        .col.s3 {
+            grid-column: span 3;
+        }
+
+        .col.s4 {
+            grid-column: span 4;
+        }
+
+        .col.s5 {
+            grid-column: span 5;
+        }
+
+        .col.s6 {
+            grid-column: span 6;
+        }
+
+        .col.s7 {
+            grid-column: span 7;
+        }
+
+        .col.s11 {
+            grid-column: span 11;
+        }
+
+        .col.s12 {
+            grid-column: span 12;
+        }
+/* 
+        .col.l12 {
+            grid-column: unset;
+        } */
+
+        .mobile-center {
+            text-align: center;
+        }
+
 
         h2 {
             margin-top: 2rem;
@@ -89,15 +218,41 @@
         }
 
 
-    }
+    } 
 
     </style>
 </head>
 
 <body>
+
+
+    <!-- <div class="row">
+        <div class="col l4" style="background: red;">1</div>
+        <div style="background: yellow;">2</div>
+
+        <div style="background: red;">3</div>
+        <div style="background: yellow;">4</div>
+
+        <div style="background: red;">5</div>
+        <div style="background: yellow;">6</div>
+
+        <div style="background: red;">7</div>
+        <div style="background: yellow;">8</div>
+
+        <div style="background: red;">9</div>
+        <div style="background: yellow;">10</div>
+
+        <div style="background: red;">11</div>
+        <div style="background: yellow;">12</div>
+    </div> -->
+
     <h1>Oteri Avwunudiogba</h1>
-    <p class="pl1">Studied Physics</p>
-    <p class="pl1">Programming Since 2016</p>
+    <p class="pl1">
+        <img src="flaticons/png/030-degree.png" />
+        Studied Physics</p>
+    <p class="pl1">
+        <img src="flaticons/png/032-coding.png" />
+        Programming Since 2016</p>
     <br/>
 
     <img class="pl1" src="flaticons/png/003-github-sign.png" />
@@ -111,8 +266,9 @@
     <img src="images/leetcode.ico" height="30px" />
 
     <br/>
+    <br/>
 
-    <div class="row">
+    <div class="row gap">
 
 
         <!-- <div class="f1">
@@ -137,92 +293,257 @@
         </div> -->
 
 
-        <div class="f15">
-            <h2>Experience</h2>
+        <div class="col l6 s12">
+            <h2 class="mobile-center">Experience</h2>
 
 
-            <div class="pbg">
-                <img src="flaticons/png/017-html-5.png" />
-            </div>
+            <section>
 
-            <div class="pbg">
-                <img src="flaticons/png/018-css-3.png" />
-            </div>
-
-            <div class="pbg">
-                <img src="flaticons/png/020-java-script-1.png" />
-            </div>
-
-            <div class="pbg">
-                <img src="flaticons/png/021-php-programming-language.png" />
-            </div>
-
-            <div class="pbg">
-                <img src="images/laravel.png" />
-            </div>
-
-            <div class="pbg">
-                <img src="flaticons/png/004-node-js.png" />
-            </div>
+                    <div class="row">
 
 
-            <div class="pbg">
-                <img src="flaticons/png/008-structure.png" />
-            </div>
+                        <div class="col s1 l1 head">
+                            <img src="flaticons/png/017-html-5.png" />
+                        </div>
 
-            <div class="pbg">
-                <img src="images/firebase.ico" />
-            </div>
-
-            <div class="pbg">
-                <img src="flaticons/png/024-git-2.png" />
-            </div>
+                        <div class="col s5 l5 tail">
+                            <p>HTML 5</p>
+                            6 years
+                        </div>
 
 
 
-            <!-- <div>
-                <img src="images/slim.png" />
-            </div> -->
+                        <div class="col s1 l1 head">
+                            <img src="flaticons/png/021-php-programming-language.png" />
+                        </div>
+
+                        <div class="col s5 l5 tail">
+                            <p>PHP</p>
+                            4 years
+                        </div>
+
+
+                        <div class="col s1 l1 head">
+                            <img src="flaticons/png/018-css-3.png" />
+                        </div>
+
+                        <div class="col s5 l5 tail">
+                            <p>CSS 3</p>
+                            6 years
+                        </div>
 
 
 
+                        <div class="col s1 l1 head">
+                            <img src="images/laravel.png" />
+                        </div>
+
+                        <div class="col s5 l5 tail">
+                            <p>Eloquent</p>
+                            4 years
+                        </div>
+
+
+                        <div class="col s1 l1 head">
+                            <img src="flaticons/png/020-java-script-1.png" />
+                        </div>
+
+                        <div class="col s5 l5 tail">
+                            <p>JavaScript</p>
+                            6 years
+                        </div>
 
 
 
-            <br/><br/><br/>
+                        <div class="col s1 l1 head">
+                            <img src="flaticons/png/004-node-js.png" />
+                        </div>
+
+                        <div class="col s5 l5 tail">
+                            <p>Node JS</p>
+                            6 years
+                        </div>
+
+
+                        <div class="col s1 l1 head">
+                            <img src="flaticons/png/008-structure.png" />
+                        </div>
+
+                        <div class="col s5 l5 tail">
+                            <p>React</p>
+                            4 years
+                        </div>
+
+
+                        <div class="col s1 l1 head">
+                            <img src="flaticons/png/021-php-programming-language.png" />
+                        </div>
+
+                        <div class="col s5 l5 tail">
+                            <p>Slim</p>
+                            4 years
+                        </div>
+
+
+                        <div class="col s1 l1 head">
+                            <img src="images/firebase.ico" />
+                        </div>
+
+                        <div class="col s5 l5 tail">
+                            <p>Firebase</p>
+                            2 years
+                        </div>
+
+
+                        <div class="col s1 l1 head">
+                            <img src="flaticons/png/009-sql-server.png" />
+                        </div>
+
+                        <div class="col s5 l5 tail">
+                            <p>SQL</p>
+                            4 years
+                        </div>
 
 
 
-            <p>Git - 2 Years</p>
-            <p>SQL - 4 Years</p>
-            <p>PHP - 4 Years</p>
+                        <div class="col s1 l1 head">
+                            <img src="flaticons/png/024-git-2.png" />
+                        </div>
 
-            <p>CSS - 6 Years</p>
-            <p>HTML - 6 Years</p>
-
-            <p>Node JS - 2 Years</p>
-            <p>Web3 JS - 2 Years</p>
-            <p>Firebase - 2 Years</p>
-            <p>React JS - 4 Years</p>
-
-            <p>JavaScript - 6 Years</p>
-            <p>React Native - 2 Years</p>
+                        <div class="col s5 l5 tail">
+                            <p>Git</p>
+                            2 years
+                        </div>
 
 
-            <br/><br/><br/>
 
+                    </div>
+
+            </section>
       
         </div>
 
 
-        <div class="f15">
-            <h2>Work History</h2>
+        <div class="col l6 s12">
+            <h2 class="mobile-center">Work History</h2>
+
+            <!-- <section class="row">
+                <div class="col l1 s1 head">
+                    logo
+                </div>
+                <div class="col l7 S7 mid">
+                    <p>EMPLOYER</p>
+                    <p>Duration</p>
+                </div>
+                <div class="col l4 S4 tail">
+                    <p>Type</p>
+                    <p>Tech Role</p>
+                </div>
+            </section> -->
+
+
+            <section class="row">
+                <div class="col l1 s1 head">
+                    logo
+                </div>
+                <div class="col l7 S7 mid">
+                    <p>SELF EMPLOYED</p>
+                    <p>Duration</p>
+                </div>
+                <div class="col l4 S4 tail">
+                    <p>Freelance</p>
+                    <p>Full Stack</p>
+                </div>
+            </section>
+
+
+            <section class="row">
+                <div class="col l1 s1 head">
+                    <img src="images/nse.png" style="height: 40px;" />
+                </div>
+                <div class="col l7 S7 mid">
+                    <p>NSE FUPRE</p>
+                    <p>Duration</p>
+                </div>
+                <div class="col l4 S4 tail">
+                    <p>Contract</p>
+                    <p>Full Stack</p>
+                </div>
+            </section>
+
+
+
+            <section class="row">
+                <div class="col l1 s1 head">
+                    <img src="images/traderfxm.png" style="height: 40px;" />
+                </div>
+                <div class="col l7 S7 mid">
+                    <p>TRADER FX</p>
+                    <p>Duration</p>
+                </div>
+                <div class="col l4 S4 tail">
+                    <p>Contract</p>
+                    <p>Full Stack</p>
+                </div>
+            </section>
+
+
+
+
+            <section class="row">
+                <div class="col l1 s1 head">
+                    logo
+                </div>
+                <div class="col l7 S7 mid">
+                    <p>AJIOZ LIMITED</p>
+                    <p>Duration</p>
+                </div>
+                <div class="col l4 S4 tail">
+                    <p>Part Time</p>
+                    <p>Full Stack</p>
+                </div>
+            </section>
+
+
+
+            <section class="row">
+                <div class="col l1 s1 head">
+                    <img src="images/swillas.png" style="height: 40px;" />
+                </div>
+                <div class="col l7 S7 mid">
+                    <p>SWILLAS LIMITED</p>
+                    <p>Duration</p>
+                </div>
+                <div class="col l4 S4 tail">
+                    <p>Intern</p>
+                    <p>Front End</p>
+                </div>
+            </section>
+
+
+            <section class="row">
+                <div class="col l1 s1 head">
+                    logo
+                </div>
+                <div class="col l7 S7 mid">
+                    <p>FUPRE BLOG</p>
+                    <p>Duration</p>
+                </div>
+                <div class="col l4 S4 tail">
+                    <p>Founder</p>
+                    <p>Front End</p>
+                </div>
+            </section>
+
+
+
+
 
             <!-- <p>Employer</p>
             <p>Employment Type - Date</p>
             <br/><br/> -->
 
-            <h4>Fupreblog</h4>
+            <!-- <h4>Fupreblog</h4>
             <p>Founder - May 2016</p>
             <br/>
 
@@ -247,14 +568,14 @@
             <br/>
 
  
-            <br/><br/><br/>
+            <br/><br/><br/> -->
 
 
         </div>
 
-        <div class="f15 yellow">
+        <div class="col l6 s12">
             
-            <h2>Projects</h2> 
+            <h2 class="mobile-center">Projects</h2> 
 
             <div>
                 <a href="https://fupreblog.blogspot.com" target="_blank">Fupreblog</a>
