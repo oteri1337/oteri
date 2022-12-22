@@ -36,11 +36,25 @@
 
 
     .head,.mid,.tail {
-        padding: 1rem;
+        padding-top: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 1rem;
         cursor: pointer;
         margin-bottom: 1rem;
         color: var(--primary-bg-font-color);
         background: var(--primary-bg-color);
+    }
+
+    .head {
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+
+    .tail {
+        margin-right: 5px;
+        padding-left: 0.5rem;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
 
     .pbg {
@@ -65,11 +79,19 @@
     }
 
     .row.gap {
-        grid-gap: 2vw;
+        grid-gap: 1vw;
     }
 
     .col.l1 {
         grid-column: span 1;
+    }
+
+    .col.l2 {
+        grid-column: span 2;
+    }
+
+    .col.l3 {
+        grid-column: span 3;
     }
 
     .col.l4 {
@@ -97,17 +119,7 @@
 
 
 
-    .head {
-        border-top-left-radius: 15px;
-        border-bottom-left-radius: 15px;
-    }
 
-    .tail {
-        padding-left: 0;
-        margin-right: 10px;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-    }
 
     div.contact img {
         padding-left: 1rem;
@@ -240,7 +252,7 @@
         <div class="col l1 s1">
             <br/>
             <img id="sun" src="flaticons/png/023-sunny.png" style="float: right; display: none;" />
-            <img id="moon" src="flaticons/png/026-moon.png" style="float: right;" />
+            <img id="moon" src="flaticons/png/025-moon.png" style="float: right;" />
 
         </div>
     </div>
@@ -265,7 +277,7 @@
         <center>
 
             <a href="https://github.com/oteri1337" target="_blank">
-                <img src="flaticons/png/029-github-2.png" />
+                <img src="flaticons/png/027-github-1.png" />
             </a>
 
 
@@ -296,7 +308,7 @@
 
 
 
-        <div class="col l4 s12">
+        <div class="col l3 s12">
             <h2 class="mobile-center">Work Experience</h2>
 
 
@@ -308,46 +320,19 @@
                         <div class="col s1 l1 head">
                             <img src="flaticons/png/014-html-5.png" />
                         </div>
-
                         <div class="col s5 l5 tail">
                             <p>HTML 5</p>
                             6 years
                         </div>
 
 
-
-                        <div class="col s1 l1 head">
-                            <img src="flaticons/png/033-php-3.png" />
-                        </div>
-
-                        <div class="col s5 l5 tail">
-                            <p>PHP</p>
-                            4 years
-                        </div>
-
-
                         <div class="col s1 l1 head">
                             <img src="flaticons/png/015-css-3.png" />
                         </div>
-
                         <div class="col s5 l5 tail">
                             <p>CSS 3</p>
                             6 years
                         </div>
-
-
-
-                        <div class="col s1 l1 head">
-                            <img src="images/laravel.png" />
-                        </div>
-
-                        <div class="col s5 l5 tail">
-                            <p>Eloquent</p>
-                            4 years
-                        </div>
-
-
-
 
 
 
@@ -359,22 +344,6 @@
                             <p>JavaScript</p>
                             6 years
                         </div>
-
-
-
-
-
-
-
-
-                        <div class="col s1 l1 head">
-                            <img src="flaticons/png/033-php-3.png" />
-                        </div>
-                        <div class="col s5 l5 tail">
-                            <p>Slim</p>
-                            4 years
-                        </div>
-
 
 
 
@@ -392,6 +361,16 @@
 
 
                         <div class="col s1 l1 head">
+                            <img src="flaticons/png/029-php.png" />
+                        </div>
+                        <div class="col s5 l5 tail">
+                            <p>PHP</p>
+                            4 years
+                        </div>
+
+
+
+                        <div class="col s1 l1 head">
                             <img src="flaticons/png/008-sql-server.png" />
                         </div>
                         <div class="col s5 l5 tail">
@@ -402,27 +381,47 @@
 
 
 
-                        <div class="col s1 l1 head">
-                            <img src="flaticons/png/006-physics.png" />
-                        </div>
-                        <div class="col s5 l5 tail">
-                            <p>React Native</p>
-                            2 years
-                        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
                         <div class="col s1 l1 head">
-                            <img src="images/firebase.ico" />
+                            <img src="images/slim.png" style="height: 32px;" />
                         </div>
                         <div class="col s5 l5 tail">
-                            <p>Firebase</p>
-                            2 years
+                            <p>Slim</p>
+                            4 years
                         </div>
 
 
 
+                        <div class="col s1 l1 head">
+                            <img src="images/laravel.png" />
+                        </div>
+                        <div class="col s5 l5 tail">
+                            <p>Eloquent</p>
+                            4 years
+                        </div>
 
 
 
@@ -437,12 +436,58 @@
 
 
                         <div class="col s1 l1 head">
+                            <img src="images/sequelize.ico" />
+                        </div>
+                        <div class="col s5 l5 tail">
+                            <p>Sequelize</p>
+                            2 years
+                        </div>
+
+
+                        <div class="col s1 l1 head">
+                            <img src="flaticons/png/006-physics.png" />
+                        </div>
+                        <div class="col s5 l5 tail">
+                            <p>React Native</p>
+                            2 years
+                        </div>
+
+
+
+                        <div class="col s1 l1 head">
                             <img src="flaticons/png/019-git.png" />
                         </div>
                         <div class="col s5 l5 tail">
                             <p>Git</p>
                             2 years
                         </div>
+
+
+
+
+
+
+
+
+  
+
+
+
+<!-- 
+                        <div class="col s1 l1 head">
+                            <img src="images/firebase.ico" />
+                        </div>
+                        <div class="col s5 l5 tail">
+                            <p>Firebase</p>
+                            2 years
+                        </div> -->
+
+
+
+
+
+
+
 
 
 
@@ -587,68 +632,155 @@
 
         </div>
 
-        <div class="col l4 s12">
+        <div class="col l5 s12">
             
             <h2 class="mobile-center">Project Links</h2> 
 
-            <div class="pbg">
-                <a href="https://ehubcore.com" target="_blank">Ehub</a>
-                <!-- <p><a href="project-ehub.html">Project Details</a></p> -->
-                <p>Library and Chat App (2020)</p>
-                <p>HTML, CSS, JavaScript, PHP and SQL</p>
-                <p>React JS, Expo, Slim PHP Framework, Eloquent</p>
-            </div>
-            <br/>
-
-            <div class="pbg">
-                <a href="https://traderfxm.com" target="_blank">Traderfxm</a>
-                <!-- <p><a href="project-traderfxm.html">Project Details</a></p> -->
-                <p>Crypto Wallet Website (2020)</p>
-                <p>HTML, CSS, JavaScript, PHP and SQL</p>
-                <p>React JS, Express JS, Web3 JS, Sequelize, Git</p>
-            </div>
-            <br/>
 
 
-            <div class="pbg">
-                <a href="https://ajiozi.com" target="_blank">Ajiozi</a>
-                <!-- <p><a href="project-ajiozi.html">Project Details</a></p> -->
-                <p>Portfolio Website (2018)</p>
-                <p>HTML, CSS, JavaScript, PHP and SQL</p>
-                <p>React JS, Slim PHP Framework, Eloquent</p>
-            </div>
-            <br/>
+            <section class="row">
+                <div class="col l1 s1 head">
+                    <img src="images/nse.png" style="height: 70px;" />
+                </div>
+                <div class="col l5 S5 mid" style="padding-top: 20px;">
+                    <a href="https://ehubcore.com" target="_blank">Ehubcore.com</a>
+                    <p>Library App with Chat, Forum & News</p>
 
-            <div class="pbg">
-                <a href="https://swillasltd.com/" target="_blank">Swillas</a>
-                <!-- <p><a href="project-ajiozi.html">Project Details</a></p> -->
-                <p>Company Website (2018)</p>
-                <p>HTML, CSS, JavaScript, PHP and SQL</p>
-            </div>
-            <br/>
-
-            <div class="pbg">
-                <a href="https://fupreblog.blogspot.com" target="_blank">Fupreblog</a>
-                <!-- <p><a href="project-fupreblog.html">Project Details</a></p> -->
-                <p>Blog Website (2016)</p>
-                <p>HTML, CSS and JavaScript</p>
-            </div>
-            <br/>
+                </div>
+                <div class="col l6 S6 tail">
+    
 
 
+                    <img src="flaticons/png/014-html-5.png" />
+                    <img src="flaticons/png/015-css-3.png" />
+                    <img src="flaticons/png/017-java-script-1.png" />
+                    <img src="flaticons/png/008-sql-server.png" />
+
+
+                    <img src="flaticons/png/029-php.png" />
+                    <img src="images/slim.png" style="width: 32px;" />
+                    <img src="images/laravel.png" />
+                    <img src="flaticons/png/007-structure.png" />
+                    <img src="flaticons/png/006-physics.png" />
+                    <img src="flaticons/png/027-github-1.png" />
+                </div>
+            </section>
+
+
+            <section class="row">
+                <div class="col l1 s1 head">
+                    <img src="images/traderfxm.png" style="height: 70px;" />
+                </div>
+                <div class="col l5 S5 mid" style="padding-top: 20px;">
+                    <p>2020</p>
+                    <a href="https://traderfxm.com" target="_blank">Traderfxm.com</a>
+                    <p>Crypto Website</p>
+                </div>
+                <div class="col l6 S6 tail">
+
+                    
+                    <img src="flaticons/png/014-html-5.png" />
+                    <img src="flaticons/png/015-css-3.png" />
+                    <img src="flaticons/png/017-java-script-1.png" />
+                    <img src="flaticons/png/008-sql-server.png" />
+
+
+                    <img src="flaticons/png/004-node-js.png" />
+                    <img src="images/sequelize.ico" />
+                    <img src="flaticons/png/007-structure.png" />
+                    <img src="flaticons/png/027-github-1.png" />
+                </div>
+            </section>
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <section class="row">
+                <div class="col l1 s1 head">
+                    <img src="images/ajiozi.png" style="width: 70px;" />
+                </div>
+                <div class="col l5 S5 mid" style="padding-top: 20px;">
+                    <p>2020</p>
+                    <p>Portfolio</p>
+                    <a href="https://ajiozi.com" target="_blank">Ajiozi.com</a>
+
+                </div>
+                <div class="col l6 S6 tail">
+                    <img src="flaticons/png/014-html-5.png" />
+                    <img src="flaticons/png/015-css-3.png" />
+                    <img src="flaticons/png/017-java-script-1.png" />
+                    <img src="flaticons/png/008-sql-server.png" />
+
+                    <img src="flaticons/png/029-php.png" />
+                    <img src="images/slim.png" style="width: 32px;" />
+                    <img src="images/laravel.png" />
+                    <img src="flaticons/png/007-structure.png" />
+                </div>
+            </section>
+
+
+
+
+
+
+
+
+            <section class="row">
+                <div class="col l1 s1 head">
+                    <img src="images/swillas.png" style="width: 70px;" />
+                </div>
+                <div class="col l5 S5 mid" style="padding-top: 20px;">
+                    <p>2020</p>
+                    <p>Portfolio</p>
+                    <a href="https://swillasltd.com/" target="_blank">Swillasltd.com</a>
+                </div>
+                <div class="col l6 S6 tail">
+                    <img src="flaticons/png/014-html-5.png" />
+                    <img src="flaticons/png/015-css-3.png" />
+                    <img src="flaticons/png/017-java-script-1.png" />
+                    <img src="flaticons/png/008-sql-server.png" />
+                    <img src="flaticons/png/029-php.png" />
+
+                </div>
+            </section>
+
+
+            <section class="row">
+                <div class="col l1 s1 head">
+                    <img src="images/fupreblog.png" style="width: 70px;" />
+                </div>
+                <div class="col l5 S5 mid" style="padding-top: 20px;">
+                   
+                    <a href="https://fupreblog.blogspot.com" target="_blank">Fupreblog</a>
+                    <p>Blog Website </p>
+
+                </div>
+                <div class="col l6 S6 tail">
+
+                    <img src="flaticons/png/014-html-5.png" />
+                    <img src="flaticons/png/015-css-3.png" />
+                    <img src="flaticons/png/017-java-script-1.png" />
+
+                    <p class="pl1">2016 - 2018</p>
+                </div>
+            </section>
 
 
 
 
         </div>
-
-
-
-
-
     </div>
 
 
