@@ -1,6 +1,8 @@
 add team size
 
-add more projects
+add months work duration
+
+add more projects - block, nft, trade
 
 add project description and screenshots
 
