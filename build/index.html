@@ -27,11 +27,18 @@
     }
 
     body {
-        /* margin: auto;
-        max-width: 490px; */
         background: var(--bg-color);
         color: var(--bg-font-color);
         font-family: 'Signika Negative', 'Trebuchet MS', sans-serif;
+    }
+
+    .container {
+        margin: auto;
+        max-width: 400px;
+    }
+
+    .center {
+        text-align: center;
     }
 
 
@@ -268,576 +275,562 @@
     </style>
 </head>
 
-<body>
-
-
-    <div class="row">
-        <div class="col l11 s11">
-            <h1>Oteri Avwunudiogba</h1>
-        </div>
-        <div class="col l1 s1">
-            <br/>
-            <img id="sun" src="flaticons/png/022-sunny.png" style="float: right; display: none;" />
-            <img id="moon" src="flaticons/png/024-moon.png" style="float: right;" />
-
-        </div>
-    </div>
-
-
-  
-        <div class="mb">
-            <img src="flaticons/png/020-degree.png" />
-            <span class="sub">Studied Physics</span>    
-        </div>
-
-        <div>
-            <img src="flaticons/png/021-coding.png" />
-            <span class="sub">Programming Since 2016</span>    
-        </div>
-
-        <br/>
-        <br/>
-
-
-    <div class="contact">
-        <center>
-
-            <a href="https://github.com/oteri1337" target="_blank">
-                <img src="flaticons/png/026-github-1.png" />
-            </a>
-
-
-            <a href="https://linkedin.com/in/oteri1337" target="_blank">
-                <img src="flaticons/png/001-linkedin.png" />
-            </a>
-        
-            <a href="mailto:oteri1337@gmail.com" target="_blank">
-                <img src="flaticons/png/010-gmail-2.png" />
-            </a>
-
-            <!-- <img src="flaticons/png/016-whatsapp-2.png" /> -->
-        
-            <a href="https://leetcode.com/oteri1337/" target="_blank">
-                <img src="images/leetcode.ico" height="30px" />
-            </a>
-
-                    
-            <a target="_blank">
-                <img src="flaticons/png/032-pdf-2.png" height="30px" />
-            </a>
-
-
-        </center>
-    </div>
-
-
-
-    <br/>
-    <br/>
-
-    <div class="row gap">
-
-
-
-        <div class="col l3 s12">
-            <h2 class="mobile-center">Work Experience</h2>
-
-
-            <section>
-
-                    <div class="row">
-
-
-                        <div class="col s1 l1 head">
-                            <img src="flaticons/png/014-html-5.png" />
-                        </div>
-                        <div class="col s5 l5 tail">
-                            <p>HTML 5</p>
-                            6 years
-                        </div>
-
-
-                        <div class="col s1 l1 head">
-                            <img src="flaticons/png/015-css-3.png" />
-                        </div>
-                        <div class="col s5 l5 tail">
-                            <p>CSS 3</p>
-                            6 years
-                        </div>
-
-
-
-
-                        <div class="col s1 l1 head">
-                            <img src="flaticons/png/017-java-script-1.png" />
-                        </div>
-                        <div class="col s5 l5 tail">
-                            <p>JavaScript</p>
-                            6 years
-                        </div>
-
-
-
-
-
-                        <div class="col s1 l1 head">
-                            <img src="flaticons/png/007-structure.png" />
-                        </div>
-                        <div class="col s5 l5 tail">
-                            <p>React JS</p>
-                            4 years
-                        </div>
-
-
-
-
-                        <div class="col s1 l1 head">
-                            <img src="flaticons/png/028-php.png" />
-                        </div>
-                        <div class="col s5 l5 tail">
-                            <p>PHP</p>
-                            4 years
-                        </div>
-
-
-
-                        <div class="col s1 l1 head">
-                            <img src="flaticons/png/008-sql-server.png" />
-                        </div>
-                        <div class="col s5 l5 tail">
-                            <p>SQL</p>
-                            4 years
-                        </div>
-
-
-
-
-                        <div class="col s1 l1 head">
-                            <img src="images/slim.png" style="height: 32px;" />
-                        </div>
-                        <div class="col s5 l5 tail">
-                            <p>Slim</p>
-                            4 years
-                        </div>
-
-
-
-                        <div class="col s1 l1 head">
-                            <img src="images/laravel.png" />
-                        </div>
-                        <div class="col s5 l5 tail">
-                            <p>Eloquent</p>
-                            4 years
-                        </div>
-
-
-
-                        <div class="col s1 l1 head">
-                            <img src="flaticons/png/004-node-js.png" />
-                        </div>
-                        <div class="col s5 l5 tail">
-                            <p>Node JS</p>
-                            2 years
-                        </div>
-
-
-
-                        <div class="col s1 l1 head">
-                            <img src="images/sequelize.ico" />
-                        </div>
-                        <div class="col s5 l5 tail">
-                            <p>Sequelize</p>
-                            2 years
-                        </div>
-
-
-                        <div class="col s1 l1 head">
-                            <img src="flaticons/png/006-physics.png" />
-                        </div>
-                        <div class="col s5 l5 tail">
-                            <p>React Native</p>
-                            2 years
-                        </div>
-
-
-
-                        <div class="col s1 l1 head">
-                            <img src="flaticons/png/039-merge-2.png" />
-                        </div>
-                        <div class="col s5 l5 tail">
-                            <p>Git</p>
-                            2 years
-                        </div>
+    <body>
+
+        <section class="container">
+
+            <!-- Intro -->
+            <div>
+
+                <div class="row">
+                    <div class="col l11 s11 center">
+                        <h1>Oteri Avwunudiogba</h1>
+
+                        <img src="flaticons/png/021-coding.png" />
+                        <span class="sub">Coding Since 2016</span>    
+    
+                    </div>
+                    <div class="col l1 s1">
+                        <br/>
+                        <img id="sun" src="flaticons/png/022-sunny.png" style="float: right; display: none;" />
+                        <img id="moon" src="flaticons/png/024-moon.png" style="float: right;" />
 
                     </div>
-
-            </section>
-      
-        </div>
-
-
-        <div class="col l4 s12">
-            <h2 class="mobile-center">Work History</h2>
-
-            <section class="row">
-                <div class="col l1 s1 head">
-                    <img src="flaticons/png/019-letter-o.png">
                 </div>
-                <div class="col l7 S7 mid">
-                    <p>SELF EMPLOYED</p>
-                    <p>2020 - 2022</p>
-                </div>
-                <div class="col l4 S4 tail">
-                    <p>Freelance</p>
-                    <p>Full Stack</p>
-                </div>
-            </section>
 
-
-            <section class="row">
-                <div class="col l1 s1 head">
-                    <img src="images/nse.png" style="height: 40px;" />
-                </div>
-                <div class="col l7 S7 mid">
-                    <p>NSE FUPRE</p>
-                    <p>2020 - 2020</p>
-                </div>
-                <div class="col l4 S4 tail">
-                    <p>Contract</p>
-                    <p>Full Stack</p>
-                </div>
-            </section>
-
-
-
-            <section class="row">
-                <div class="col l1 s1 head">
-                    <img src="images/traderfxm.png" style="height: 40px;" />
-                </div>
-                <div class="col l7 S7 mid">
-                    <p>TRADER FX</p>
-                    <p>2020 - 2020</p>
-                </div>
-                <div class="col l4 S4 tail">
-                    <p>Contract</p>
-                    <p>Full Stack</p>
-                </div>
-            </section>
-
-
-
-
-            <section class="row">
-                <div class="col l1 s1 head">
-                    <img src="images/ajiozibig.png" style="width: 40px;">
-                </div>
-                <div class="col l7 S7 mid">
-                    <p>AJIOZI LIMITED</p>
-                    <p>2019 - 2019</p>
-                </div>
-                <div class="col l4 S4 tail">
-                    <p>Part Time</p>
-                    <p>Full Stack</p>
-                </div>
-            </section>
-
-
-
-            <section class="row">
-                <div class="col l1 s1 head">
-                    <img src="images/swillas.png" style="height: 40px;" />
-                </div>
-                <div class="col l7 S7 mid">
-                    <p>SWILLAS LIMITED</p>
-                    <p>2018 - 2018</p>
-                </div>
-                <div class="col l4 S4 tail">
-                    <p>Intern</p>
-                    <p>Front End</p>
-                </div>
-            </section>
-
-
-            <section class="row">
-                <div class="col l1 s1 head">
-                    <img src="images/fupreblog.png" style="height: 40px;">
-                </div>
-                <div class="col l7 S7 mid">
-                    <p>FUPRE BLOG</p>
-                    <p>2016 - 2018</p>
-                </div>
-                <div class="col l4 S4 tail">
-                    <p>Founder</p>
-                    <p>Front End</p>
-                </div>
-            </section>
-
-
-
-
-
-            <!-- <p>Employer</p>
-            <p>Employment Type - Date</p>
-            <br/><br/> -->
-
-            <!-- <h4>Fupreblog</h4>
-            <p>Founder - May 2016</p>
-            <br/>
-
-            <h4>Swillas Limited</h4>
-            <p>Intern - May 2018</p>
-            <br/>
-
-            <h4>Ajioz Limited</h4>
-            <p>Part Time - Dec 2018</p> 
-            <br/>
-
-            <h4>TraderFX Limited</h4>
-            <p>Contract - Mar 2020</p>
-            <br/>
-
-            <h4>NSE Fupre</h4>
-            <p>Contract - May 2020</p>
-            <br/>
-
-            <h4>Freelance</h4>
-            <p>Contract - Jan 2021</p>
-            <br/>
-
- 
-            <br/><br/><br/> -->
-
-
-        </div>
-
-        <div class="col l5 s12">
-            
-            <h2 class="mobile-center">Project Links</h2> 
-
-
-
-
-
-            <section class="row">
-                <!-- <div class="col l1 s1 head">
-                    <img src="images/traderfxm.png" style="height: 70px;" />
+                <!-- <div class="mb">
+                    <img src="flaticons/png/020-degree.png" />
+                    <span class="sub">Studied Physics</span>    
                 </div> -->
-                <div class="col l5 s5 head" style="padding-top: 20px;">
-                    <a href="https://traderfxm.com" target="_blank">Traderfxm.com</a>
-                    <p>Website 2020</p>
-                </div>
-                <div class="col l7 s7 tail">
 
+                <!-- <div class="center">
+                    <img src="flaticons/png/021-coding.png" />
+                    <span class="sub">Programming Since 2016</span>    
+                </div> -->
+
+                <br/>
+                <br/>
+                <div class="contact">
+                    <center>
+
+                        <a href="https://github.com/oteri1337" target="_blank">
+                            <img src="flaticons/png/026-github-1.png" />
+                        </a>
+
+
+                        <a href="https://linkedin.com/in/oteri1337" target="_blank">
+                            <img src="flaticons/png/001-linkedin.png" />
+                        </a>
                     
-                    <img src="flaticons/png/014-html-5.png" />
-                    <img src="flaticons/png/015-css-3.png" />
-                    <img src="flaticons/png/017-java-script-1.png" />
-                    <img src="flaticons/png/008-sql-server.png" />
-                    <img src="flaticons/png/007-structure.png" />
-                    <br/>
+                        <a href="mailto:oteri1337@gmail.com" target="_blank">
+                            <img src="flaticons/png/010-gmail-2.png" />
+                        </a>
 
-                    <img src="flaticons/png/039-merge-2.png" />
-                    <img src="flaticons/png/004-node-js.png" />
-                    <img src="images/sequelize.ico" />
+                        <!-- <img src="flaticons/png/016-whatsapp-2.png" /> -->
+                    
+                        <a href="https://leetcode.com/oteri1337/" target="_blank">
+                            <img src="images/leetcode.ico" height="30px" />
+                        </a>
 
-                    <!-- <br/><br/>
-                    Shop | Wallet | Exchange -->
+                                
+                        <a target="_blank">
+                            <img src="flaticons/png/032-pdf-2.png" height="30px" />
+                        </a>
+
+
+                    </center>
                 </div>
-            </section>
+            </div>
 
+            <!-- Experience -->
+            <div>
 
+                <br/>
+                <br/>
+                <h2 class="center">WORK EXPERIENCE</h2>
 
-            <section class="row">
-                <!-- <div class="col l1 s1 head">
-                    <img src="images/nse.png" style="height: 70px;" />
-                </div> -->
-                <div class="col l5 s5 head" style="padding-top: 20px;">
 
-                    <a href="https://ehubcore.com" target="_blank">Ehubcore.com</a>
-      
-                    <p>App 2020</p>
-                </div>
-                <div class="col l7 s7 tail">
-                    <img src="flaticons/png/014-html-5.png" />
-                    <img src="flaticons/png/015-css-3.png" />
-                    <img src="flaticons/png/017-java-script-1.png" />
-                    <img src="flaticons/png/008-sql-server.png" />
-                    <img src="flaticons/png/007-structure.png" />
-                    <br/>
-                    <img src="flaticons/png/039-merge-2.png" />
-                    <img src="flaticons/png/028-php.png" />
-                    <img src="images/slim.png" style="width: 32px;" />
-                    <img src="images/laravel.png" />
-                    <img src="flaticons/png/006-physics.png" />
-                    <!-- <br/>
-                    <br/>
-                    <p>News | Chat | Forum | Library</p> -->
-                </div>
-            </section>
+                <section>
 
+                        <div class="row">
 
 
+                            <div class="col s1 l1 head">
+                                <img src="flaticons/png/014-html-5.png" />
+                            </div>
+                            <div class="col s5 l5 tail">
+                                <p>HTML 5</p>
+                                7 years
+                            </div>
 
 
+                            <div class="col s1 l1 head">
+                                <img src="flaticons/png/015-css-3.png" />
+                            </div>
+                            <div class="col s5 l5 tail">
+                                <p>CSS 3</p>
+                                7 years
+                            </div>
 
 
 
 
+                            <div class="col s1 l1 head">
+                                <img src="flaticons/png/017-java-script-1.png" />
+                            </div>
+                            <div class="col s5 l5 tail">
+                                <p>JavaScript</p>
+                                7 years
+                            </div>
 
 
 
 
 
+                            <div class="col s1 l1 head">
+                                <img src="flaticons/png/007-structure.png" />
+                            </div>
+                            <div class="col s5 l5 tail">
+                                <p>React JS</p>
+                                5 years
+                            </div>
 
 
 
-            <section class="row">
-                <!-- <div class="col l1 s1 head">
-                    <img src="images/ajiozi.png" style="width: 70px;" />
-                </div> -->
-                <div class="col l5 s5 head" style="padding-top: 20px;">
-                    <a href="https://ajiozi.com" target="_blank">Ajiozi.com</a>
-                    <!-- <p>Portfolio</p> -->
-                    <p>Website 2019</p>
-                </div>
-                <div class="col l7 s7 tail">
-                    <img src="flaticons/png/014-html-5.png" />
-                    <img src="flaticons/png/015-css-3.png" />
-                    <img src="flaticons/png/017-java-script-1.png" />
-                    <img src="flaticons/png/008-sql-server.png" />
 
+                            <div class="col s1 l1 head">
+                                <img src="flaticons/png/028-php.png" />
+                            </div>
+                            <div class="col s5 l5 tail">
+                                <p>PHP</p>
+                                5 years
+                            </div>
 
-                    <img src="flaticons/png/007-structure.png" />
-                    <br/>
 
-                    <img src="flaticons/png/039-merge-2.png" />
-                    <img src="flaticons/png/028-php.png" />
-                    <img src="images/slim.png" style="width: 32px;" />
-                    <img src="images/laravel.png" />
-                </div>
-            </section>
 
+                            <div class="col s1 l1 head">
+                                <img src="flaticons/png/008-sql-server.png" />
+                            </div>
+                            <div class="col s5 l5 tail">
+                                <p>SQL</p>
+                                5 years
+                            </div>
 
 
 
 
+                            <div class="col s1 l1 head">
+                                <img src="images/slim.png" style="height: 32px;" />
+                            </div>
+                            <div class="col s5 l5 tail">
+                                <p>Slim</p>
+                                5 years
+                            </div>
 
 
 
-            <section class="row">
-                <!-- <div class="col l1 s1 head">
-                    <img src="images/swillas.png" style="width: 70px;" />
-                </div> -->
-                <div class="col l5 s5 head" style="padding-top: 20px;">
-                   
-                    <a href="https://swillasltd.com/" target="_blank">Swillasltd.com</a>
-                    <!-- <p>Portfolio </p> -->
-                    <p>Website 2018</p>
-                </div>
-                <div class="col l7 s7 tail">
-                    <img src="flaticons/png/014-html-5.png" />
-                    <img src="flaticons/png/015-css-3.png" />
-                    <img src="flaticons/png/017-java-script-1.png" />
-                    <img src="flaticons/png/008-sql-server.png" />
-                    <br/>
+                            <div class="col s1 l1 head">
+                                <img src="images/laravel.png" />
+                            </div>
+                            <div class="col s5 l5 tail">
+                                <p>Eloquent</p>
+                                5 years
+                            </div>
 
-                    <img src="flaticons/png/028-php.png" />
 
-                </div>
-            </section>
 
+                            <div class="col s1 l1 head">
+                                <img src="flaticons/png/004-node-js.png" />
+                            </div>
+                            <div class="col s5 l5 tail">
+                                <p>Node JS</p>
+                                3 years
+                            </div>
+
+
+
+                            <div class="col s1 l1 head">
+                                <img src="images/sequelize.ico" />
+                            </div>
+                            <div class="col s5 l5 tail">
+                                <p>Sequelize</p>
+                                3 years
+                            </div>
 
-            <section class="row">
-                <!-- <div class="col l1 s1 head">
-                    <img src="images/fupreblog.png" style="width: 70px;" />
-                </div> -->
-                <div class="col l5 s5 head" style="padding-top: 20px;">
-                    <a href="https://fupreblog.blogspot.com" target="_blank">Fupreblog</a>
-                    <!-- <p>Blog</p> -->
-                    <p>Website 2016</p>
-                </div>
-                <div class="col l7 s7 tail">
 
-                    <img src="flaticons/png/014-html-5.png" />
-                    <img src="flaticons/png/015-css-3.png" />
-                    <img src="flaticons/png/017-java-script-1.png" />
+                            <div class="col s1 l1 head">
+                                <img src="flaticons/png/006-physics.png" />
+                            </div>
+                            <div class="col s5 l5 tail">
+                                <p>React Native</p>
+                                3 years
+                            </div>
 
-     
-                </div>
-            </section>
 
 
+                            <div class="col s1 l1 head">
+                                <img src="flaticons/png/039-merge-2.png" />
+                            </div>
+                            <div class="col s5 l5 tail">
+                                <p>Git</p>
+                                3 years
+                            </div>
 
+                        </div>
 
-        </div>
-    </div>
+                </section>
+        
+            </div>
 
 
+            <!-- Projects -->
+            <div>
+                <br/><br/>
+                <h2 class="center">PROJECT LINKS</h2> 
 
 
 
-    <!-- <br/>
-    <br/>
-    <br/>
-    <br/>
-    <center>ICONS BY FLATICONS</center> -->
 
 
+                <section class="row">
+                    <!-- <div class="col l1 s1 head">
+                        <img src="images/traderfxm.png" style="height: 70px;" />
+                    </div> -->
+                    <div class="col l5 s5 head" style="padding-top: 20px;">
+                        <a href="https://traderfxm.com" target="_blank">Traderfxm.com</a>
+                        <p>Website 2020</p>
+                    </div>
+                    <div class="col l7 s7 tail">
 
+                        
+                        <img src="flaticons/png/014-html-5.png" />
+                        <img src="flaticons/png/015-css-3.png" />
+                        <img src="flaticons/png/017-java-script-1.png" />
+                        <img src="flaticons/png/008-sql-server.png" />
+                        <img src="flaticons/png/007-structure.png" />
+                        <br/>
 
-    <script>
+                        <img src="flaticons/png/039-merge-2.png" />
+                        <img src="flaticons/png/004-node-js.png" />
+                        <img src="images/sequelize.ico" />
 
+                        <!-- <br/><br/>
+                        Shop | Wallet | Exchange -->
+                    </div>
+                </section>
 
-        const sun = document.getElementById("sun");
-        const moon = document.getElementById("moon");
 
-        function changeTheme (theme) {
 
-            const root = document.querySelector(":root");
+                <section class="row">
+                    <!-- <div class="col l1 s1 head">
+                        <img src="images/nse.png" style="height: 70px;" />
+                    </div> -->
+                    <div class="col l5 s5 head" style="padding-top: 20px;">
 
-            if (theme == "dark") {
+                        <a href="https://ehubcore.com" target="_blank">Ehubcore.com</a>
+        
+                        <p>App 2020</p>
+                    </div>
+                    <div class="col l7 s7 tail">
+                        <img src="flaticons/png/014-html-5.png" />
+                        <img src="flaticons/png/015-css-3.png" />
+                        <img src="flaticons/png/017-java-script-1.png" />
+                        <img src="flaticons/png/008-sql-server.png" />
+                        <img src="flaticons/png/007-structure.png" />
+                        <br/>
+                        <img src="flaticons/png/039-merge-2.png" />
+                        <img src="flaticons/png/028-php.png" />
+                        <img src="images/slim.png" style="width: 32px;" />
+                        <img src="images/laravel.png" />
+                        <img src="flaticons/png/006-physics.png" />
+                        <!-- <br/>
+                        <br/>
+                        <p>News | Chat | Forum | Library</p> -->
+                    </div>
+                </section>
 
-                root.style.setProperty("--bg-color", "black");
 
-                root.style.setProperty("--bg-font-color", "white");
 
-                root.style.setProperty("--primary-bg-color", "#1E222D");
 
-                root.style.setProperty("--primary-bg-font-color", "white");
 
-                sun.style.display = "block";
-                moon.style.display = "none";
 
-            } else {
 
-                root.style.setProperty("--bg-color", "#f7f7f7");
 
-                root.style.setProperty("--bg-font-color", "#000000");
 
-                root.style.setProperty("--primary-bg-color", "#ffffff");
 
-                root.style.setProperty("--primary-bg-font-color", "#000000");
 
-                sun.style.display = "none";
-                moon.style.display = "block";
+
+
+
+
+
+
+                <section class="row">
+                    <!-- <div class="col l1 s1 head">
+                        <img src="images/ajiozi.png" style="width: 70px;" />
+                    </div> -->
+                    <div class="col l5 s5 head" style="padding-top: 20px;">
+                        <a href="https://ajiozi.com" target="_blank">Ajiozi.com</a>
+                        <!-- <p>Portfolio</p> -->
+                        <p>Website 2019</p>
+                    </div>
+                    <div class="col l7 s7 tail">
+                        <img src="flaticons/png/014-html-5.png" />
+                        <img src="flaticons/png/015-css-3.png" />
+                        <img src="flaticons/png/017-java-script-1.png" />
+                        <img src="flaticons/png/008-sql-server.png" />
+
+
+                        <img src="flaticons/png/007-structure.png" />
+                        <br/>
+
+                        <img src="flaticons/png/039-merge-2.png" />
+                        <img src="flaticons/png/028-php.png" />
+                        <img src="images/slim.png" style="width: 32px;" />
+                        <img src="images/laravel.png" />
+                    </div>
+                </section>
+
+
+
+
+
+
+
+
+                <section class="row">
+                    <!-- <div class="col l1 s1 head">
+                        <img src="images/swillas.png" style="width: 70px;" />
+                    </div> -->
+                    <div class="col l5 s5 head" style="padding-top: 20px;">
+                    
+                        <a href="https://swillasltd.com/" target="_blank">Swillasltd.com</a>
+                        <!-- <p>Portfolio </p> -->
+                        <p>Website 2018</p>
+                    </div>
+                    <div class="col l7 s7 tail">
+                        <img src="flaticons/png/014-html-5.png" />
+                        <img src="flaticons/png/015-css-3.png" />
+                        <img src="flaticons/png/017-java-script-1.png" />
+                        <img src="flaticons/png/008-sql-server.png" />
+                        <br/>
+
+                        <img src="flaticons/png/028-php.png" />
+
+                    </div>
+                </section>
+
+
+                <section class="row">
+                    <!-- <div class="col l1 s1 head">
+                        <img src="images/fupreblog.png" style="width: 70px;" />
+                    </div> -->
+                    <div class="col l5 s5 head" style="padding-top: 20px;">
+                        <a href="https://fupreblog.blogspot.com" target="_blank">Fupreblog</a>
+                        <!-- <p>Blog</p> -->
+                        <p>Website 2016</p>
+                    </div>
+                    <div class="col l7 s7 tail">
+
+                        <img src="flaticons/png/014-html-5.png" />
+                        <img src="flaticons/png/015-css-3.png" />
+                        <img src="flaticons/png/017-java-script-1.png" />
+
+        
+                    </div>
+                </section>
+
+
+
+
+            </div>
+
+
+            <!-- History -->
+            <div>
+                <br/><br/>
+                <h2 class="center">WORK HISTORY</h2>
+
+                <section class="row">
+                    <div class="col l1 s1 head">
+                        <img src="flaticons/png/019-letter-o.png">
+                    </div>
+                    <div class="col l7 S7 mid">
+                        <p>SELF EMPLOYED</p>
+                        <p>2020 - 2022</p>
+                    </div>
+                    <div class="col l4 S4 tail">
+                        <p>Freelance</p>
+                        <p>Full Stack</p>
+                    </div>
+                </section>
+
+
+                <section class="row">
+                    <div class="col l1 s1 head">
+                        <img src="images/nse.png" style="height: 40px;" />
+                    </div>
+                    <div class="col l7 S7 mid">
+                        <p>NSE FUPRE</p>
+                        <p>2020 - 2020</p>
+                    </div>
+                    <div class="col l4 S4 tail">
+                        <p>Contract</p>
+                        <p>Full Stack</p>
+                    </div>
+                </section>
+
+
+
+                <section class="row">
+                    <div class="col l1 s1 head">
+                        <img src="images/traderfxm.png" style="height: 40px;" />
+                    </div>
+                    <div class="col l7 S7 mid">
+                        <p>TRADER FX</p>
+                        <p>2020 - 2020</p>
+                    </div>
+                    <div class="col l4 S4 tail">
+                        <p>Contract</p>
+                        <p>Full Stack</p>
+                    </div>
+                </section>
+
+
+
+
+                <section class="row">
+                    <div class="col l1 s1 head">
+                        <img src="images/ajiozibig.png" style="width: 40px;">
+                    </div>
+                    <div class="col l7 S7 mid">
+                        <p>AJIOZI LIMITED</p>
+                        <p>2019 - 2019</p>
+                    </div>
+                    <div class="col l4 S4 tail">
+                        <p>Part Time</p>
+                        <p>Full Stack</p>
+                    </div>
+                </section>
+
+
+
+                <section class="row">
+                    <div class="col l1 s1 head">
+                        <img src="images/swillas.png" style="height: 40px;" />
+                    </div>
+                    <div class="col l7 S7 mid">
+                        <p>SWILLAS LIMITED</p>
+                        <p>2018 - 2018</p>
+                    </div>
+                    <div class="col l4 S4 tail">
+                        <p>Intern</p>
+                        <p>Front End</p>
+                    </div>
+                </section>
+
+
+                <section class="row">
+                    <div class="col l1 s1 head">
+                        <img src="images/fupreblog.png" style="height: 40px;">
+                    </div>
+                    <div class="col l7 S7 mid">
+                        <p>FUPRE BLOG</p>
+                        <p>2016 - 2018</p>
+                    </div>
+                    <div class="col l4 S4 tail">
+                        <p>Founder</p>
+                        <p>Front End</p>
+                    </div>
+                </section>
+
+
+
+            </div>
+
+
+            <!-- Education -->
+            <div>
+                <br/><br/>
+                <h2 class="center">EDUCATION</h2>
+
+
+
+
+                <section class="row">
+                    <div class="col l1 s1 head">
+                        <img src="images/nse.png" style="height: 40px;" />
+                    </div>
+                    <div class="col l11 S7 tail">
+                        <p>Federal University of Petroleum Resources</p>
+                        <p>Bachelor's Degeree in Physics (2015 - 2019)</p>
+                    </div>
+                    <!-- <div class="col l4 S4 tail">
+                        <p>Contract</p>
+                        <p>Full Stack</p>
+                    </div> -->
+                </section>
+
+
+
+
+
+            </div>
+
+
+        </section>
+
+        <script>
+
+
+            const sun = document.getElementById("sun");
+            const moon = document.getElementById("moon");
+
+            function changeTheme (theme) {
+
+                const root = document.querySelector(":root");
+
+                if (theme == "dark") {
+
+                    root.style.setProperty("--bg-color", "black");
+
+                    root.style.setProperty("--bg-font-color", "white");
+
+                    root.style.setProperty("--primary-bg-color", "#1E222D");
+
+                    root.style.setProperty("--primary-bg-font-color", "white");
+
+                    sun.style.display = "block";
+                    moon.style.display = "none";
+
+                } else {
+
+                    root.style.setProperty("--bg-color", "#f7f7f7");
+
+                    root.style.setProperty("--bg-font-color", "#000000");
+
+                    root.style.setProperty("--primary-bg-color", "#ffffff");
+
+                    root.style.setProperty("--primary-bg-font-color", "#000000");
+
+                    sun.style.display = "none";
+                    moon.style.display = "block";
+                }
+
+                
             }
 
-            
-        }
 
 
+            sun.addEventListener("click", () => changeTheme("light"));
+            moon.addEventListener("click", () => changeTheme("dark"));
 
-        sun.addEventListener("click", () => changeTheme("light"));
-        moon.addEventListener("click", () => changeTheme("dark"));
 
-
-        if (location.protocol !== "https:" && location.host == "oteri.herokuapp.com") {
-            location.replace(
-                `https:${location.href.substring(location.protocol.length)}`
-            );
-        }
-    </script>
-
-</body>
-
+            if (location.protocol !== "https:" && location.host == "oteri.herokuapp.com") {
+                location.replace(
+                    `https:${location.href.substring(location.protocol.length)}`
+                );
+            }
+        </script>
+    </body>
 </html>
