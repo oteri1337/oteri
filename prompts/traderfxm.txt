@@ -1,0 +1,12 @@
+Please I need you to write a 500 description on this. 
+
+TraderFX Marketplace is a web app with 3 main sections, a centralised exchange , an e commerce section and a wallet section. 
+
+It was built using React, NodeJS and a SQL Database.
+
+The centralized exchange allows users to covnert crypto like bitcoin, ethereum or tether to fiat - 
+(please do not include things like trading pairs, advanced trading algorithm, order matching)
+
+The wallet section allows user to send and recieve bitcoin, ethereum or tether
+
+harware wallets are sold on the e commerce section example Ledger Wallet
