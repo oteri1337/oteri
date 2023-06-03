@@ -1,0 +1,7 @@
+Please I need you to write a 500 description on this. 
+
+Ehub is an android and ios app with elibrary section, news section, forum section and a private chat section
+
+It was built using HTML, CSS, JavaScript, React, React Native, PHP and a SQL Database.
+
+The e library allows users to read pdf ebooks on the app and save for offline use
