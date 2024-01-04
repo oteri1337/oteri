@@ -43,26 +43,120 @@
         background: var(--primary-bg-color);
     }
 
+    h2, p {
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        margin-bottom: 2rem;
+    }
+
+    img {
+        max-height: 80vh;
+    }
+
     </style>
 
 </head>
 <body>
 
+
+    <center>
+        <img id="sun" src="flaticons/png/022-sunny.png" style="float: right; display: none;" />
+        <img id="moon" src="flaticons/png/024-moon.png" style="float: right;" />
+    </center>
+
+
     <div class="container pbg" style="text-align: justify;">    
-        <p>Ehub is a mobile application available on both Android and iOS platforms, specifically designed to cater to the needs of engineering students. This comprehensive app provides a range of features, including an e-library section, news section, forum section, and private chat section.</p>
-
-        <p>The e-library section of Ehub serves as a digital repository for engineering students. It offers access to a wide collection of PDF ebooks covering various subjects and topics. Students can conveniently read these ebooks within the app and even save them for offline use. This feature ensures that valuable learning resources are accessible anytime, anywhere, even without an internet connection.</p>
-
-        <p>To keep students updated with the latest developments in the field of engineering, Ehub includes a news section. This section provides curated articles, research updates, and industry insights. By accessing this section, students can stay informed about cutting-edge advancements, technological breakthroughs, and academic events relevant to their studies.</p>
+        <p>I developed Ehub App, I uploaded to Google PlayStore and Apple App Store, the app was avialable for download in 2020. I also developed a web admin panel portal for Ehub.</p> 
+            
+        <p>Ehub App had three main sections</p>
         
-        <p>The forum section of Ehub encourages collaboration and knowledge-sharing among engineering students. It provides a platform for engaging in discussions, seeking advice, and exchanging ideas with peers from around the world. This interactive feature enables students to broaden their perspectives, deepen their understanding of complex concepts, and foster a sense of community within the engineering fraternity.</p>
 
-        <p>In addition to the forum section, Ehub features a private chat section, facilitating one-on-one conversations among students. This personalized communication platform promotes seamless collaboration on group projects, sharing of study materials, and seeking assistance from classmates. The private chat section strengthens the sense of community and camaraderie among engineering students, fostering lasting relationships and promoting effective learning through peer interaction.</p>
+        <h2>Chat Section</h2>
+        <p>For sending direction messages to other users</p>
+        <img src="/images/ehub-chat-1.png"/>
+        <img src="/images/ehub-chat-2.png"/>
 
-        <p>Ehub has been developed using a combination of HTML, CSS, JavaScript, React, React Native, PHP, and a SQL database. These technologies contribute to creating an intuitive and user-friendly interface on the frontend, ensuring compatibility across different devices. On the backend, PHP handles server-side operations and facilitates seamless data exchange with the SQL database. This comprehensive tech stack ensures optimal performance, security, and scalability for Ehub, providing engineering students with a reliable and efficient platform.</p>
 
-        <p>In conclusion, Ehub is a mobile application designed to meet the needs of engineering students. Its e-library section offers access to a wide range of PDF ebooks, with the added benefit of offline availability. The news section keeps students informed about the latest developments in their field, while the forum section encourages collaboration and knowledge-sharing. The private chat section enables personalized communication among students. With its robust tech stack, Ehub ensures a seamless user experience, empowering engineering students to excel in their academic pursuits.</p>
+
+        <br/><br/><br/><br/>
+
+
+        <h2>Forum Section</h2>
+        <p>News and forum section for creating and commenting on forum topics and news</p>
+        <img src="/images/ehub-news-1.png"/>
+        <img src="/images/ehub-news-2.png"/>
+
+
+
+
+        <br/><br/><br/><br/>
+
+
+        <h2>Library Section</h2>
+        <p>For reading an downloading ebooks for offline use</p>
+        <img src="/images/ehub-lib-1.png"/>
+        <img src="/images/ehub-lib-2.png"/>
+
+
     </div>
+
+
+
+    <script>
+
+
+        const sun = document.getElementById("sun");
+        const moon = document.getElementById("moon");
+
+        function changeTheme (theme) {
+
+            const root = document.querySelector(":root");
+
+            if (theme == "dark") {
+
+                root.style.setProperty("--bg-color", "black");
+
+                root.style.setProperty("--bg-font-color", "white");
+
+                root.style.setProperty("--primary-bg-color", "#1E222D");
+
+                root.style.setProperty("--primary-bg-font-color", "white");
+
+                sun.style.display = "block";
+                moon.style.display = "none";
+
+            } else {
+
+                root.style.setProperty("--bg-color", "#f7f7f7");
+
+                root.style.setProperty("--bg-font-color", "#000000");
+
+                root.style.setProperty("--primary-bg-color", "#ffffff");
+
+                root.style.setProperty("--primary-bg-font-color", "#000000");
+
+                sun.style.display = "none";
+                moon.style.display = "block";
+            }
+
+            
+        }
+
+
+
+        sun.addEventListener("click", () => changeTheme("light"));
+        moon.addEventListener("click", () => changeTheme("dark"));
+
+
+        if (location.protocol !== "https:" && location.host == "oteri.herokuapp.com") {
+            location.replace(
+                `https:${location.href.substring(location.protocol.length)}`
+            );
+        }
+    </script>
 
 </body>
 </html>
