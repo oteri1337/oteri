@@ -1,27 +1,18 @@
 <pre>
-### Experience
-Description
+Tech Description
 
 
-
-### Company
-Description
+Role Description
 
 
+Company Description
 
-### Role
-Description
 
+Layout - Mobile and Desktop Select
 
 
 ### Projects
 Link
 Description
 Screenshots
-
-
-
-
-### Layout
-Mobile and Desktop Select
 </pre>
